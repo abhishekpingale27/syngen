@@ -1,0 +1,44 @@
+.latest-news-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .news-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .news-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .latest-news-container {
+    position: relative;
+  }
+  
+  .slick-dots {
+    bottom: -30px; /* Adjust position of the dots */
+    display: flex !important;
+    justify-content: center;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded corners for the dots container */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px; /* Size of the dots */
+    color: #28a745; /* Default color of the dot */
+    opacity: 1; /* Make the dot fully visible */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff4500; /* Active dot color */
+  }
+  
+  .slick-dots li button {
+    border: none;
+    background: none;
+  }
+  
