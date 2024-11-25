@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaSearch, FaFilter, FaUserCircle } from 'react-icons/fa';
-import tomatoIcon from '../assets/t.png'; // Make sure you have the icon in the assets folder
+import { FaFilter, FaUserCircle } from 'react-icons/fa';
+
 
 const Header = () => {
   return (

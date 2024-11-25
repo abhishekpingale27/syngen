@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    margin: 40px 20px;
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Ensures the image fits well */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Product Text */
+  .product-card h3 {
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .product-card p {
+    color: #4a5568;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    font-size: 1.125rem;
+    color: #38a169; /* Green */
+    font-weight: 600;
+  }
+  
+  /* "Read More" Button */
+  .read-more-btn {
+    padding: 8px 15px;
+    background-color: #38a169; /* Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #2f855a; /* Darker green */
+  }
+  
+  /* Pagination Styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #edf2f7;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+  }
+  
+  .pagination span {
+    font-size: 18px;
+    align-self: center;
+    font-weight: bold;
+  }
+  
